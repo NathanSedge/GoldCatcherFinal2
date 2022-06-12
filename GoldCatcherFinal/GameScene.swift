@@ -289,6 +289,12 @@ extension GameScene: SKPhysicsContactDelegate {
               defaults.set(score, forKey: "scoreKey")
              
           }
+          DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            let newScene = MenuScene(size: self.size)
+            newScene.scaleMode = self.scaleMode
+            let animation = SKTransition.fade(withDuration: 2.0)
+            self.view?.presentScene(newScene, transition: animation)
+          }
           print(highestScore)
       }
 
