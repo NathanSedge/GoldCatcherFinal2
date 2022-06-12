@@ -78,6 +78,7 @@ class Obstacle: SKSpriteNode {
   func hit() {
     let removeFromParent = SKAction.removeFromParent()
     self.run(removeFromParent)
+    
   }
 
   func miss() {

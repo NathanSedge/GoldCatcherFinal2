@@ -20,12 +20,12 @@ enum PlayerAnimationType: String {
 
 class Player: SKSpriteNode {
     
-    // MARK: - PROPERTIES
+    // skeleton properties
     
     private var walkTextures: [SKTexture]?
-    public var playerSpeed: CGFloat = 1.5
+    public var playerSpeed: CGFloat = 2.5
     
-    // MARK: - INIT
+  
     
     init() {
         let texture = SKTexture(imageNamed: "skeletonMove_0")
